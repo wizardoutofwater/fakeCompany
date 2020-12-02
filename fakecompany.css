@@ -1,0 +1,45 @@
+
+#zachImg {
+  height: 150px;
+  background: #aaa;
+}
+
+#mikeImg {
+  height: 150px;
+  background: #aaa;
+}
+
+#tristynImg {
+  height: 150px;
+  background: #aaa;
+}
+
+.img-thumbnail:hover {
+  transform: scale(2);
+}
+
+.img-thumbnail {
+  transition: all 0.3s ease 0s;
+}
+
+.fakeimg {
+  height: 200px;
+  background: #aaa;
+}
+
+.container {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+.featurette-divider {
+  margin: 5rem 0;
+}
+
+.flame,
+.phone,
+.dragon {
+  width: auto;
+  height: 250px;
+}
