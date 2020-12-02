@@ -21,7 +21,14 @@
     .featurette-divider {
     margin: 5rem 0;
     }
-  
+
+    .flame,
+    .phone,
+    .dragon {
+      width: auto;
+      height: 250px;
+    }
+
   </style>
 </head>
 
@@ -54,9 +61,12 @@
 
   <div class="container" style="margin-top:30px">
     <div class="row">
-      <div class="col-sm-4">
-
-  
+      <div class="col-3">
+        <img class="logo" 
+        src="data:image/png;base64,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" 
+        alt="team logo"/>
+      </div>
+      <div class="col-sm-1">
         <hr class="d-sm-none">
       </div>
       <div class="col-sm-8">
@@ -67,11 +77,56 @@
         <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
           ullamco.</p>
-
-
       </div>
     </div>
   </div>
+
+  <div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="card" style="width: 18rem">
+              <img class="card-img-top flame" 
+              src="https://thefederalist.com/wp-content/uploads/2019/08/flamethrower.jpg" 
+              alt="Card image cap"/>
+              <div class="card-body">
+                <h5 class="card-title">Flame Thrower</h5>
+                <p class="card-text">
+                  For the person who lights your up your life. 
+                </p>
+                <a href="#" class="btn btn-primary">Add to wagon</a>
+              </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem">
+                <img class="card-img-top phone" 
+                src="https://m.media-amazon.com/images/I/819x2d6vQtL.jpg" 
+                alt="Card image cap" />
+                <div class="card-body">
+                  <h5 class="card-title">Flip Phone</h5>
+                  <p class="card-text">
+                    Since vintage is stylish.
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to wagon</a>
+                </div>
+             </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem">
+                <img class="card-img-top dragon" 
+                src="https://i.pinimg.com/originals/82/73/72/82737223ed4077608ec58c35df4af3c0.jpg" 
+                alt="Card image cap" />
+                <div class="card-body">
+                  <h5 class="card-title">Bearded Dragon</h5>
+                  <p class="card-text">
+                    Because we all want pet dragons.
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to wagon</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
   <footer class="text-center pt-4 my-md-5 pt-md-5 border-top">
     <div class="row ">
